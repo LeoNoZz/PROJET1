@@ -1,0 +1,77 @@
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.pilotes, .equipes, .photos, .CV {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pilote, .equipe {
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.pilote img, .equipe img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.photos img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+}
+
+.CV {
+    width: 560px;
+    height: 315px;
+    margin: 10px;
+}
+
+.classement {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.classement th, .classement td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,10 +1,10 @@
-
+/* Styles pour l'en-tête */
 header {
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
 }
-
+/* Style pour le menu de navigation */
 nav ul {
     list-style: none;
     margin: 0;
@@ -20,18 +20,18 @@ nav a {
     text-decoration: none;
     color: #333;
 }
-
+/* Style pour la section principale */
 main {
     padding: 20px;
     text-align: center;
 }
-
+/* Style pour les sections des pilotes, équipes, photos et CV */
 .pilotes, .equipes, .photos, .CV {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
+/* Style pour chaque carte de pilote et d'équipe */
 .pilote, .equipe {
     width: 250px;
     margin: 10px;
@@ -39,25 +39,25 @@ main {
     border: 1px solid #ccc;
     padding: 10px;
 }
-
+/* Style pour les images des pilotes et des équipes */
 .pilote img, .equipe img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
-
+/* Style pour la galerie de photos */
 .photos img {
     width: 200px;
     height: 150px;
     margin: 10px;
 }
-
+/* Style pour la section CV */
 .CV {
     width: 560px;
     height: 315px;
     margin: 10px;
 }
-
+/* Table de classement */
 .classement {
     width: 100%;
     border-collapse: collapse;
@@ -68,7 +68,7 @@ main {
     padding: 10px;
     text-align: left;
 }
-
+/* Styles pour le pied de page */
 footer {
     background-color: #333;
     color: #fff;

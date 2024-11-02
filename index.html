@@ -25,6 +25,28 @@
         </nav>
     </header>
     
+    <!-- Formulaire de changement de langue -->
+    <form action="" method="get" id="languageForm">
+        <label for="languageSelect">Langue :</label>
+        <select id="languageSelect" name="langue" onchange="changeLanguage()">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
+    </form>
+</header>
+
+<script>
+    // Fonction pour changer de langue en fonction de la sélection
+    function changeLanguage() {
+        const language = document.getElementById('languageSelect').value;
+        if (language === 'en') {
+            window.location.href = 'index_en.html'; // Page en anglais
+        } else {
+            window.location.href = 'index.html'; // Page en français
+        }
+    }
+</script>
+    
     <!-- Section principale pour afficher le contenu de la page principal -->
     <main>
         <h2>Bienvenue sur le site du 24h du Mans Moto</h2> <!-- Sous-titre d'accueil pour les visiteurs -->

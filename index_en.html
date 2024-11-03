@@ -24,15 +24,23 @@
             </ul>
         </nav>
 
-        <!-- Formulaire de changement de langue -->
-        <form action="" method="get" id="languageForm">
-            <label for="languageSelect">Language:</label>
-            <select id="languageSelect" name="langue" onchange="changeLanguage()">
-                <option value="en" selected>English</option>
-                <option value="fr">Français</option>
-            </select>
-        </form>
-    </header>
+        <!-- Sélecteur de langue avec des drapeaux -->
+    <div id="languageSelector">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/langfr-225px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png" alt="Français" onclick="changeLanguage('fr')" style="cursor: pointer; width: 30px;">
+        <img src="https://m.media-amazon.com/images/I/51dJGBtZMlL._AC_UY1000_.jpg" alt="English" onclick="changeLanguage('en')" style="cursor: pointer; width: 30px;">
+    </div>
+</header>
+
+<script>
+    // Fonction pour changer de langue en fonction du drapeau cliqué
+    function changeLanguage(language) {
+        if (language === 'en') {
+            window.location.href = 'index_en.html'; // Page en anglais
+        } else {
+            window.location.href = 'index.html'; // Page en français
+        }
+    }
+</script>
     
     <!-- Section principale pour afficher le contenu de la page principal -->
     <main>
@@ -45,18 +53,6 @@
     <footer>
         <p>&copy; 2024 24 Hours of Le Mans Moto</p> <!-- Pied de page avec mention de copyright -->
     </footer>
-
-    <script>
-        // Fonction pour changer de langue en fonction de la sélection
-        function changeLanguage() {
-            const language = document.getElementById('languageSelect').value;
-            if (language === 'fr') {
-                window.location.href = 'index.html'; // Page en français
-            } else {
-                window.location.href = 'index_en.html'; // Page en anglais
-            }
-        }
-    </script>
 
 </body>
 </html>
